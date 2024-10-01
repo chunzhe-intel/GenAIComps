@@ -51,6 +51,7 @@ class Gateway:
             output_datatype=self.output_datatype,
         )
         self.define_routes()
+        error
         self.service.start()
 
     def define_routes(self):
