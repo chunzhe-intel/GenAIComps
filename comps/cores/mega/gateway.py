@@ -50,9 +50,9 @@ class Gateway:
             input_datatype=self.input_datatype,
             output_datatype=self.output_datatype,
         )
-        self.define_routes()
+        # self.define_routes()
         error
-        self.service.start()
+        # self.service.start()
 
     def define_routes(self):
         self.service.app.router.add_api_route(self.endpoint, self.handle_request, methods=["POST"])
